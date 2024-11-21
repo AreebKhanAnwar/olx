@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OLX Clone</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Styles (Optional) -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .navbar-brand img {
+      height: 30px;
+      width: 50px;
+    }
+   
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .footer {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="OLX Logo" >
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sell</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Buy & Sell Anything!</h1>
+      <p class="lead">The simplest way to sell & buy items online.</p>
+      <button class="btn btn-light">Start Selling</button>
+    </div>
+  </section>
+
+  <!-- Product Listings -->
+  <section class="container py-5">
+    <h2 class="mb-4">Latest Listings</h2>
+    <div class="row">
+      <!-- Product Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Product" id="iphone_img">
+          <div class="card-body">
+            <h5 class="card-title" id="iphone_price"></h5>
+            <p class="card-text" id="iphone_name">Iphone 16pro max</p>
+            <a href="https://www.apple.com/iphone-16-pro/specs/" class="btn btn-primary" target="_main">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Product" id="kawaski_img">
+          <div class="card-body">
+            <h5 class="card-title" id="kawasaki_price"></h5>
+            <p class="card-text" id="kawasaki_name"></p>
+            <a href="https://www.kawasaki.com.au/en-au/motorcycle/z/supernaked/z1000" target="_main" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Product" id="CG_img">
+          <div class="card-body">
+            <h5 class="card-title" id="CG_price"></h5>
+            <p class="card-text" id="CG_name"></p>
+            <a href="https://www.pakwheels.com/used-bikes/honda-cg-125-2021-for-sale-in-lahore-640394" target="_main" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Product Card 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Product" id="sorento_img">
+          <div class="card-body">
+            <h5 class="card-title" id="sorento_price"></h5>
+            <p class="card-text" id="sorento_name"></p>
+            <a href="https://www.pakwheels.com/used-cars/kia-sorento-2021-for-sale-in-karachi-9376070" class="btn btn-primary" target="_main">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Product" id="lenovo_img">
+          <div class="card-body">
+            <h5 class="card-title" id="lenovo_price"></h5>
+            <p class="card-text" id="lenovo_name"></p>
+            <a href="https://srtrader.net/product/lenovo-x1-carbon/?srsltid=AfmBOopP3DIzDFG6Yy1PcJkVpmXuyZuMQXaxFi85aS3X6CfSa71x6AmY" target="_main" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Product" id="Mark_img">
+          <div class="card-body">
+            <h5 class="card-title" id="mark_price"></h5>
+            <p class="card-text" id="mark_name"></p>
+            <a href="https://www.pakwheels.com/used-cars/toyota-mark-x-2005-for-sale-in-karachi-9434859" target="_main" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Product Card 7 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Product" id="pixel_img">
+          <div class="card-body">
+            <h5 class="card-title" id="pixel_price"></h5>
+            <p class="card-text" id="pixel_name"></p>
+            <a href="https://whatmobiles.net.pk/product/google-pixel-6a-price-in-pakistan/" class="btn btn-primary" target="_main">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 8 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Product" id="dslr_img">
+          <div class="card-body">
+            <h5 class="card-title" id="dslr_price"></h5>
+            <p class="card-text" id="dslr_name"></p>
+            <a href="https://www.olx.com.pk/item/canon-60d-with-75-300-canon-lens-iid-1094943631" target="_main" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 9 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Product" id="ipad_img">
+          <div class="card-body">
+            <h5 class="card-title" id="ipad_price"></h5>
+            <p class="card-text" id="ipad_name"></p>
+            <a href="https://www.apple.com/ipad-pro/" target="_main" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 OLX Clone. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS-->
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</html>
